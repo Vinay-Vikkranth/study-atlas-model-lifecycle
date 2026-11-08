@@ -1,0 +1,12 @@
+.git
+.venv
+runtime*
+.test-tmp
+__pycache__
+*.pyc
+*.joblib
+*.sqlite3*
+.env*
+bootstrap-output.json
+test-results.txt
+docs/evidence

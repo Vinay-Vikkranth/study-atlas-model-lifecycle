@@ -1,0 +1,32 @@
+{
+  "synthetic_only": true,
+  "transport": "real loopback HTTP",
+  "timing": "Client-observed latency includes connection setup, validation, model hash verification, loading and inference; not cloud latency",
+  "current": {
+    "requests": 80,
+    "concurrency": 4,
+    "p50_ms": 79.64134999201633,
+    "p95_ms": 102.73670000606216,
+    "errors": 0,
+    "elapsed_seconds": 1.6748762999777682,
+    "served_versions": [
+      "6cc5518e2e2ee1fda319"
+    ]
+  },
+  "prior_release": {
+    "requests": 80,
+    "concurrency": 4,
+    "p50_ms": 80.55869999225251,
+    "p95_ms": 146.53970001381822,
+    "errors": 0,
+    "elapsed_seconds": 1.786734900000738,
+    "served_versions": [
+      "371bcb08d23cd98adffe"
+    ]
+  },
+  "restored_prediction_identical": true,
+  "version_changed": true,
+  "malformed_input_status": 422,
+  "unauthorized_mutation_status": 401,
+  "final_test_not_reevaluated": true
+}

@@ -1,0 +1,36 @@
+name: Lifecycle regression and container
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python -m atlas_lifecycle.cli demo
+      - run: python -m atlas_lifecycle.cli report
+      - run: python scripts/benchmark.py --requests 24 --concurrency 2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-lifecycle-evidence
+          path: docs/evidence/
+      - run: docker build -t atlas-ci .
+      - run: |
+          docker run --detach --name atlas-ci --publish 127.0.0.1:8740:8740 atlas-ci
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent http://127.0.0.1:8740/api/ready; then break; fi
+            sleep 2
+          done
+          curl --fail http://127.0.0.1:8740/api/ready
+          curl --fail http://127.0.0.1:8740/ > /dev/null
+          test "$(curl --silent --output /dev/null --write-out '%{http_code}' --request POST --header 'Content-Type: application/json' --data '{}' http://127.0.0.1:8740/api/train)" = 403
+      - if: always()
+        run: docker logs atlas-ci || true

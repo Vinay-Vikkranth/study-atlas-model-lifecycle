@@ -1,0 +1,451 @@
+{
+  "synthetic_only": true,
+  "active": "6cc5518e2e2ee1fda319",
+  "dataset_sha256": "6b4620260487c0b2ca81fef0c72b95951e993153e7f55964b5552dc7279a782b",
+  "training_code_sha256": "bfdf9304472101296f16856af8f794815fa0898ce5e3f8a5a740997f99550811",
+  "models": [
+    {
+      "id": "6cc5518e2e2ee1fda319",
+      "selected_family": "logistic_regression",
+      "config": {
+        "seed": 29,
+        "profile": "compact",
+        "folds": 3,
+        "minimum_auc": 0.6,
+        "minimum_f1": 0.4,
+        "maximum_brier": 0.3
+      },
+      "config_hash": "b3e4aa9ac2fa4e65342a6ec7cf4cc46d5b8aa0073b48aa6902a82cea0b2fa64d",
+      "artifact_sha256": "e61df8afde51888ea06aaf9824da7dc82f9293b1594a22cc30339094b84c196f",
+      "validation": {
+        "roc_auc": 0.7007469654528479,
+        "average_precision": 0.5147545534220119,
+        "f1": 0.5277777777777778,
+        "precision": 0.37254901960784315,
+        "recall": 0.9047619047619048,
+        "brier": 0.18642888224874155,
+        "log_loss": 0.5529808209527908,
+        "threshold": 0.13,
+        "confusion_matrix": [
+          [
+            76,
+            128
+          ],
+          [
+            8,
+            76
+          ]
+        ],
+        "calibration": [
+          {
+            "predicted": 0.0725391003908215,
+            "observed": 0.09090909090909091
+          },
+          {
+            "predicted": 0.18123051295743628,
+            "observed": 0.32051282051282054
+          },
+          {
+            "predicted": 0.3017031226200301,
+            "observed": 0.2857142857142857
+          },
+          {
+            "predicted": 0.43577694519563237,
+            "observed": 0.1891891891891892
+          },
+          {
+            "predicted": 0.5636367103430058,
+            "observed": 0.6538461538461539
+          },
+          {
+            "predicted": 0.6819249469440507,
+            "observed": 0.625
+          },
+          {
+            "predicted": 0.7993613284066707,
+            "observed": 0.8
+          }
+        ]
+      },
+      "gates": {
+        "passed": true,
+        "checks": {
+          "validation_auc": true,
+          "validation_f1": true,
+          "validation_brier": true
+        },
+        "selection_partition": "validation",
+        "test_metrics_used": false
+      },
+      "fit_geography": [
+        "Fictional-00",
+        "Fictional-01",
+        "Fictional-02",
+        "Fictional-03",
+        "Fictional-04",
+        "Fictional-05",
+        "Fictional-06",
+        "Fictional-07",
+        "Fictional-08",
+        "Fictional-09",
+        "Fictional-10",
+        "Fictional-11",
+        "Fictional-12",
+        "Fictional-13",
+        "Fictional-14",
+        "Fictional-15",
+        "Fictional-16",
+        "Fictional-17"
+      ],
+      "calibration_geography": [
+        "Fictional-18",
+        "Fictional-19",
+        "Fictional-20",
+        "Fictional-21"
+      ],
+      "validation_geography": [
+        "Fictional-22",
+        "Fictional-23",
+        "Fictional-24",
+        "Fictional-25"
+      ]
+    },
+    {
+      "id": "371bcb08d23cd98adffe",
+      "selected_family": "logistic_regression",
+      "config": {
+        "seed": 17,
+        "profile": "balanced",
+        "folds": 3,
+        "minimum_auc": 0.6,
+        "minimum_f1": 0.4,
+        "maximum_brier": 0.3
+      },
+      "config_hash": "50239c71acfeb2d1e4a55cd8605653856daf88e656f9a77b74ea9eb700f64816",
+      "artifact_sha256": "2eec7987bf45701a14ede2e3c5e1f386e65da337fc9e47d719fe38c0f7ca7565",
+      "validation": {
+        "roc_auc": 0.7005718954248366,
+        "average_precision": 0.5146624269298855,
+        "f1": 0.5277777777777778,
+        "precision": 0.37254901960784315,
+        "recall": 0.9047619047619048,
+        "brier": 0.18642747575687926,
+        "log_loss": 0.5529713599861141,
+        "threshold": 0.13,
+        "confusion_matrix": [
+          [
+            76,
+            128
+          ],
+          [
+            8,
+            76
+          ]
+        ],
+        "calibration": [
+          {
+            "predicted": 0.0725427320671219,
+            "observed": 0.09090909090909091
+          },
+          {
+            "predicted": 0.1812480075875805,
+            "observed": 0.32051282051282054
+          },
+          {
+            "predicted": 0.3016961942317006,
+            "observed": 0.2857142857142857
+          },
+          {
+            "predicted": 0.4357740183108525,
+            "observed": 0.1891891891891892
+          },
+          {
+            "predicted": 0.561225927273346,
+            "observed": 0.68
+          },
+          {
+            "predicted": 0.6786241691843964,
+            "observed": 0.5882352941176471
+          },
+          {
+            "predicted": 0.7993960748876636,
+            "observed": 0.8
+          }
+        ]
+      },
+      "gates": {
+        "passed": true,
+        "checks": {
+          "validation_auc": true,
+          "validation_f1": true,
+          "validation_brier": true
+        },
+        "selection_partition": "validation",
+        "test_metrics_used": false
+      },
+      "fit_geography": [
+        "Fictional-00",
+        "Fictional-01",
+        "Fictional-02",
+        "Fictional-03",
+        "Fictional-04",
+        "Fictional-05",
+        "Fictional-06",
+        "Fictional-07",
+        "Fictional-08",
+        "Fictional-09",
+        "Fictional-10",
+        "Fictional-11",
+        "Fictional-12",
+        "Fictional-13",
+        "Fictional-14",
+        "Fictional-15",
+        "Fictional-16",
+        "Fictional-17"
+      ],
+      "calibration_geography": [
+        "Fictional-18",
+        "Fictional-19",
+        "Fictional-20",
+        "Fictional-21"
+      ],
+      "validation_geography": [
+        "Fictional-22",
+        "Fictional-23",
+        "Fictional-24",
+        "Fictional-25"
+      ]
+    }
+  ],
+  "grouped_cv": [
+    {
+      "family": "logistic_regression",
+      "mean_auc": 0.7468624145241282,
+      "fold_auc": [
+        0.7369281045751634,
+        0.7810798708491433,
+        0.7225792681480778
+      ]
+    },
+    {
+      "family": "random_forest",
+      "mean_auc": 0.7264209605506027,
+      "fold_auc": [
+        0.71571221081025,
+        0.7517381160000942,
+        0.7118125548414637
+      ]
+    },
+    {
+      "family": "gradient_boosting",
+      "mean_auc": 0.7303096566928128,
+      "fold_auc": [
+        0.7225334578275755,
+        0.7506304352949494,
+        0.7177650769559134
+      ]
+    },
+    {
+      "family": "hist_gradient_boosting",
+      "mean_auc": 0.7172493313386847,
+      "fold_auc": [
+        0.7135724660234464,
+        0.7308807239989632,
+        0.7072948039936445
+      ]
+    },
+    {
+      "family": "extra_trees",
+      "mean_auc": 0.7377645524855275,
+      "fold_auc": [
+        0.7241674447556801,
+        0.772784049397846,
+        0.7163421633030569
+      ]
+    }
+  ],
+  "final_test_reports": [
+    {
+      "model_id": "6cc5518e2e2ee1fda319",
+      "dataset_sha256": "6b4620260487c0b2ca81fef0c72b95951e993153e7f55964b5552dc7279a782b",
+      "test_partition_sha256": "92f6392d2537b079fb5d4a242926a93b88cec33d8c1e3728740f581708c5660a",
+      "created": "2026-11-08T18:52:30.389068+00:00",
+      "partition": "test",
+      "cities": [
+        "Fictional-26",
+        "Fictional-27",
+        "Fictional-28",
+        "Fictional-29"
+      ],
+      "rows": 288,
+      "metrics": {
+        "roc_auc": 0.7554380093916986,
+        "average_precision": 0.6215319900300269,
+        "f1": 0.5951557093425606,
+        "precision": 0.4479166666666667,
+        "recall": 0.8865979381443299,
+        "brier": 0.18352465265001136,
+        "log_loss": 0.5521113669040623,
+        "threshold": 0.13,
+        "confusion_matrix": [
+          [
+            85,
+            106
+          ],
+          [
+            11,
+            86
+          ]
+        ],
+        "calibration": [
+          {
+            "predicted": 0.07794079766319818,
+            "observed": 0.10752688172043011
+          },
+          {
+            "predicted": 0.1886026484497631,
+            "observed": 0.26666666666666666
+          },
+          {
+            "predicted": 0.3143187880258348,
+            "observed": 0.42857142857142855
+          },
+          {
+            "predicted": 0.4286253946454552,
+            "observed": 0.2857142857142857
+          },
+          {
+            "predicted": 0.552696346193586,
+            "observed": 0.6571428571428571
+          },
+          {
+            "predicted": 0.6784163733157175,
+            "observed": 0.6666666666666666
+          },
+          {
+            "predicted": 0.7928784173303368,
+            "observed": 1.0
+          }
+        ]
+      },
+      "release_already_selected": true,
+      "immutable": true,
+      "used_for_promotion": false
+    }
+  ],
+  "drift_reports": [
+    {
+      "rows": 1296,
+      "method": "PSI with fixed training-only bins, additive 0.5 smoothing",
+      "psi_threshold": 0.2,
+      "missing_rate_increase_threshold": 0.1,
+      "features": [
+        {
+          "feature": "population_density",
+          "psi": 0.0,
+          "missing_rate": 0.02546296296296296,
+          "reference_missing_rate": 0.02546296296296296,
+          "alert": false
+        },
+        {
+          "feature": "housing_instability",
+          "psi": 2.932897076748575,
+          "missing_rate": 0.020833333333333332,
+          "reference_missing_rate": 0.020833333333333332,
+          "alert": true
+        },
+        {
+          "feature": "income_index",
+          "psi": 0.0,
+          "missing_rate": 0.026234567901234566,
+          "reference_missing_rate": 0.026234567901234566,
+          "alert": false
+        },
+        {
+          "feature": "service_access",
+          "psi": 7.347431342012342,
+          "missing_rate": 0.0,
+          "reference_missing_rate": 0.02854938271604938,
+          "alert": true
+        },
+        {
+          "feature": "employment_index",
+          "psi": 0.0,
+          "missing_rate": 0.03009259259259259,
+          "reference_missing_rate": 0.03009259259259259,
+          "alert": false
+        },
+        {
+          "feature": "transit_access",
+          "psi": 0.0,
+          "missing_rate": 0.016203703703703703,
+          "reference_missing_rate": 0.016203703703703703,
+          "alert": false
+        }
+      ],
+      "alert": true,
+      "meaning": "Input distribution change only; not proof of label drift or model-quality deterioration",
+      "scenario": "shifted",
+      "id": "d47c4cf6e5764ababf75a6e6f74da977",
+      "model_id": "6cc5518e2e2ee1fda319",
+      "created": "2026-11-08T18:52:30.444160+00:00"
+    },
+    {
+      "rows": 1296,
+      "method": "PSI with fixed training-only bins, additive 0.5 smoothing",
+      "psi_threshold": 0.2,
+      "missing_rate_increase_threshold": 0.1,
+      "features": [
+        {
+          "feature": "population_density",
+          "psi": 0.0,
+          "missing_rate": 0.02546296296296296,
+          "reference_missing_rate": 0.02546296296296296,
+          "alert": false
+        },
+        {
+          "feature": "housing_instability",
+          "psi": 0.0,
+          "missing_rate": 0.020833333333333332,
+          "reference_missing_rate": 0.020833333333333332,
+          "alert": false
+        },
+        {
+          "feature": "income_index",
+          "psi": 0.0,
+          "missing_rate": 0.026234567901234566,
+          "reference_missing_rate": 0.026234567901234566,
+          "alert": false
+        },
+        {
+          "feature": "service_access",
+          "psi": 0.0,
+          "missing_rate": 0.02854938271604938,
+          "reference_missing_rate": 0.02854938271604938,
+          "alert": false
+        },
+        {
+          "feature": "employment_index",
+          "psi": 0.0,
+          "missing_rate": 0.03009259259259259,
+          "reference_missing_rate": 0.03009259259259259,
+          "alert": false
+        },
+        {
+          "feature": "transit_access",
+          "psi": 0.0,
+          "missing_rate": 0.016203703703703703,
+          "reference_missing_rate": 0.016203703703703703,
+          "alert": false
+        }
+      ],
+      "alert": false,
+      "meaning": "Input distribution change only; not proof of label drift or model-quality deterioration",
+      "scenario": "reference",
+      "id": "ae3eca275a61466d89f80cb1815d2778",
+      "model_id": "6cc5518e2e2ee1fda319",
+      "created": "2026-11-08T18:52:30.434161+00:00"
+    }
+  ],
+  "historical_research_not_reproduced": true
+}

@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-11-08",
+  "original_public_repository": "https://github.com/Vinay-Vikkranth/gun-violence-geospatial-ml",
+  "original_source_sha256": {
+    "app/main.py": "1fa90d0b7f380d1c747ce8bd0a708260f69cbebb80855cf6f11373648ea8a083",
+    "app/model_service.py": "59ef8e40bd342a280a9a4ee4f1fc7d61ed5c6c1fbdafc947844b103c49e64fc1",
+    "scripts/build_model_registry.py": "5a11bd52178f0fdfa1faa6d8d2e06abdce8a902698a0f1890a9d2025a3af2ca8"
+  },
+  "source_files_redistributed": false,
+  "restricted_data_or_models_redistributed": false,
+  "preserved_concepts": [
+    "grid_id and city record inspection",
+    "FastAPI /api/health, /api/hexes and /api/predict service boundaries",
+    "validated scenario inputs",
+    "model and data fingerprints",
+    "separate multiple-classifier registry"
+  ],
+  "new_experiment": "30 fictional geography groups, seeded synthetic generator, no original fitted model weights",
+  "implementation": "Independently written lifecycle extension with AI assistance"
+}

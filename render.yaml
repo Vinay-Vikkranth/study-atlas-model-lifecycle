@@ -1,0 +1,14 @@
+# Deployment recipe only. A public Render service is NOT created by this file.
+# Free ephemeral storage resets state after replacement; use a paid persistent disk
+# only after explicit spending approval. Admin is disabled in the public demo.
+services:
+  - type: web
+    name: study-atlas-model-lifecycle
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/ready
+    envVars:
+      - key: PORT
+        value: "8740"
+      - key: ATLAS_ADMIN_TOKEN
+        value: ""

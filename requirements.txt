@@ -1,0 +1,12 @@
+numpy==2.2.5
+scipy==1.15.2
+pandas==3.0.3
+scikit-learn==1.7.0
+fastapi==0.115.13
+starlette==0.46.2
+pydantic==2.11.7
+uvicorn==0.34.3
+joblib==1.5.1
+threadpoolctl==3.6.0
+httpx==0.28.1
+matplotlib==3.10.1
